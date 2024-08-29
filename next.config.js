@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+const repo = "portfolio";
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
+
 const nextConfig = {
-  basePath: "/portfolio",
+  trailingSlash: true,
+  basePath: basePath,
+  assetPrefix: assetPrefix,
   output: "export",
   reactStrictMode: true,
 };
